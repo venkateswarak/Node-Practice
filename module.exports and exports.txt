@@ -1,0 +1,4 @@
+Difference b/w module.exports and exports
+
+Setting module.exports allows the database_module function to be called like a function when required. Simply setting exports wouldn't allow the function to be exported because node exports the object module.exports references. The following code wouldn't allow the user to call the function.
+Basically node.js doesn't export the object that exports currently references, but exports the properties of what exports originally references. Although Node.js does export the object module.exports references, allowing you to call it like a function.
